@@ -32,6 +32,7 @@ wheels = [
 def listify(word):
     return [char for char in word]
 
+# Need to divide list into 26 character chunks, and pad them out to 26 characters
 def encode_message(message):
     whitespaced = "".join(message.split())
     upcased = whitespaced.upper()
