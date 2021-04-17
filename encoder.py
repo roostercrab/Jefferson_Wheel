@@ -40,7 +40,6 @@ def encode_message(message):
     wheel = 0
     for char in listified:
       position = string.ascii_uppercase.index(char)
-      print(wheel)
       encoded_list.append(wheels[wheel][position])
       wheel += 1
     encoded_string = ''.join([elem for elem in encoded_list])
